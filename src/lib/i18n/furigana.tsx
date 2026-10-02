@@ -28,11 +28,19 @@ export function renderFurigana(text: string): ReactNode {
       // whitespace-nowrap: otherwise the browser can line-wrap a ruby
       // element's base text mid-word, splitting its own reading across two
       // lines — confirmed happening on 進捗 and 保存 in testing.
+      //
+      // aria-hidden on the reading itself: a screen reader already
+      // pronounces 漢字 correctly from the Unicode text alone, so exposing
+      // the reading too would just announce it twice. Furigana is a visual
+      // aid for sighted readers who know the word but not that kanji, not
+      // something assistive tech needs — confirmed this was happening via
+      // an accessible-name match in testing (an "Exclude all" button's
+      // computed name included its own reading, inline, once it had one).
       <ruby key={key++} className="whitespace-nowrap">
         {match[1]}
-        <rp>(</rp>
-        <rt>{match[2]}</rt>
-        <rp>)</rp>
+        <rp aria-hidden>(</rp>
+        <rt aria-hidden>{match[2]}</rt>
+        <rp aria-hidden>)</rp>
       </ruby>,
     );
     lastIndex = match.index + match[0].length;

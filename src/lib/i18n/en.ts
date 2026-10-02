@@ -5,6 +5,10 @@ export const en = {
     homeLink: "⌂ Home",
     languageLabel: "Language",
   },
+  common: {
+    back: "← Back",
+    next: "Next",
+  },
   home: {
     title: "Minecraft Pixel Art Generator",
     currentProjectLink: "Current project",
@@ -26,6 +30,56 @@ export const en = {
     previewUnknown: "Choose an image above to see the full size. The width is set to match its shape.",
     previewKnown: (width: number, height: number) =>
       `That comes out to ${width}x${height}, based on your image's shape.`,
-    next: "Next",
+  },
+  modes: {
+    creative: {
+      title: "Creative mode",
+      description: "Use every block, no matter how hard it is to get.",
+    },
+    survival: {
+      title: "Survival mode",
+      description: "Exclude the blocks that are too hard to gather.",
+    },
+    // Short forms for the preset list, where the full title/description
+    // above would be too wide.
+    creativeShort: "Creative",
+    survivalShort: "Survival",
+  },
+  version: {
+    heading: "Minecraft version",
+    description: "Only blocks that exist in that version are shown",
+    ariaLabel: "Filter by Minecraft version",
+    latest: "Latest (all blocks)",
+  },
+  blocksPage: {
+    pageTitle: "Choose your blocks",
+    creativeSummary: (count: number, version: string | null) =>
+      version
+        ? `All ${count} blocks from Minecraft ${version} will be used in your pixel art.`
+        : `All ${count} blocks will be used in your pixel art.`,
+    searchPlaceholder: "Search blocks",
+    difficultyAriaLabel: "Filter by difficulty",
+    difficultyAll: "All",
+    difficultyLabel: {
+      Easy: "Easy",
+      Medium: "Medium",
+      Hard: "Hard",
+    },
+    blocksIncluded: (count: number, total: number) => `${count} of ${total} blocks included`,
+    noMatches: "No blocks match your search.",
+    categoryIncluded: (count: number, total: number) => `${count}/${total} included`,
+    includeAll: "Include all",
+    excludeAll: "Exclude all",
+  },
+  presets: {
+    heading: "Presets",
+    description: "Save the mode, version and blocks you've picked to reuse next time",
+    summary: (count: number, modeLabel: string) =>
+      `${count} block${count === 1 ? "" : "s"} · ${modeLabel}`,
+    load: "Load",
+    delete: "Delete",
+    nameAriaLabel: "New preset name",
+    namePlaceholder: "Preset name, e.g. My go-to palette",
+    save: "Save current selection",
   },
 };

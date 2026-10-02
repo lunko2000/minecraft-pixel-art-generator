@@ -115,6 +115,40 @@ const entries = new Map(zip.getEntries().map((e) => [e.entryName, e]));
 const readJson = (name) => JSON.parse(entries.get(name).getData().toString());
 const strip = (ref) => ref.replace(/^minecraft:/, "");
 
+// Modern client jars only bundle en_us.json — every other language is
+// downloaded separately and cached content-addressed, under the version's
+// own asset index. Falls back to null (callers fall back to the English
+// name) if the index or that particular language was never downloaded
+// locally, e.g. the game has never actually been played in that language.
+function readAssetLang(locale) {
+  try {
+    const appdata = process.env.APPDATA ?? "";
+    const versionId = path.basename(jarPath, ".jar");
+    const versionJson = JSON.parse(
+      fs.readFileSync(path.join(path.dirname(jarPath), `${versionId}.json`), "utf8"),
+    );
+    const indexId = versionJson.assetIndex?.id;
+    if (!indexId) return null;
+    const indexPath = path.join(appdata, ".minecraft", "assets", "indexes", `${indexId}.json`);
+    if (!fs.existsSync(indexPath)) return null;
+    const index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+    const entry = index.objects[`minecraft/lang/${locale}.json`];
+    if (!entry) return null;
+    const objectPath = path.join(
+      appdata,
+      ".minecraft",
+      "assets",
+      "objects",
+      entry.hash.slice(0, 2),
+      entry.hash,
+    );
+    if (!fs.existsSync(objectPath)) return null;
+    return JSON.parse(fs.readFileSync(objectPath, "utf8"));
+  } catch {
+    return null;
+  }
+}
+
 // The set of block ids that already existed in LEGACY_VERSION, or null if
 // that version isn't installed locally.
 const LEGACY_VERSION = "1.16.5";
@@ -268,6 +302,12 @@ function analyse(png) {
 // -------------------------------------------------------------------- main
 
 const lang = readJson("assets/minecraft/lang/en_us.json");
+const langJa = readAssetLang("ja_jp");
+console.log(
+  langJa
+    ? "Japanese block names: using Mojang's own translations"
+    : "Japanese block names: ja_jp.json isn't cached locally, falling back to English names",
+);
 const fallbackName = (id) =>
   id.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
@@ -285,6 +325,7 @@ for (const id of ids) {
   if (!faces) continue;
 
   const name = lang[`block.minecraft.${id}`] ?? fallbackName(id);
+  const nameJa = langJa?.[`block.minecraft.${id}`] ?? name;
   const uniform = faces.top === faces.side;
   const since = legacyIds?.has(id) ? LEGACY_VERSION : "later";
   const base = { category: categorize(id), since };
@@ -292,6 +333,7 @@ for (const id of ids) {
     ...base,
     id,
     name,
+    nameJa,
     texture: faces.side,
     rank: uniform ? 1 : 0,
   });
@@ -301,6 +343,11 @@ for (const id of ids) {
       ...base,
       id: `${id}_${face}`,
       name: `${name} (${face === "end" ? "End" : "Top"})`,
+      // 切り口 (cut cross-section) / 上面 (top face) — generic terms, since
+      // "end" blocks aren't only logs: basalt, bone block, deepslate and
+      // other pillar-like blocks placed along an axis use it too, not just
+      // wood, so a wood-specific term (木口) would be wrong for those.
+      nameJa: `${nameJa}（${face === "end" ? "切り口" : "上面"}）`,
       texture: faces.top,
       face,
       rank: 2,
@@ -325,8 +372,8 @@ for (const candidate of candidates) {
   }
   seen.set(candidate.texture, candidate.id);
 
-  const { id, name, category, face, since } = candidate;
-  found.push({ id, name, category, face, since, ...analysis, png });
+  const { id, name, nameJa, category, face, since } = candidate;
+  found.push({ id, name, nameJa, category, face, since, ...analysis, png });
 }
 
 found.sort(
@@ -349,9 +396,10 @@ for (const block of found) {
 fs.writeFileSync(
   path.join(root, "src", "data", "blocks.json"),
   JSON.stringify(
-    found.map(({ id, name, color, noise, category, face, since }) => ({
+    found.map(({ id, name, nameJa, color, noise, category, face, since }) => ({
       id,
       name,
+      nameJa,
       color,
       noise,
       category,

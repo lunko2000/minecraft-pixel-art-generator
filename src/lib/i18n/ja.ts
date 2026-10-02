@@ -12,6 +12,10 @@ export const ja: typeof en = {
     homeLink: "⌂ ホーム",
     languageLabel: "{言語|げんご}",
   },
+  common: {
+    back: "← {戻る|もどる}",
+    next: "{次|つぎ}へ",
+  },
   home: {
     title: "マインクラフト ピクセルアート ジェネレーター",
     currentProjectLink: "{現在|げんざい}のプロジェクト",
@@ -38,6 +42,56 @@ export const ja: typeof en = {
       "{上|うえ}で{画像|がぞう}を{選択|せんたく}すると、{実際|じっさい}のサイズが{表示|ひょうじ}されます。{幅|はば}は{画像|がぞう}の{形|かたち}に{合わせて|あわせて}{自動的|じどうてき}に{決まり|きまり}ます。",
     previewKnown: (width: number, height: number) =>
       `{画像|がぞう}の{形|かたち}に{合わせる|あわせる}と、${width}x${height} になります。`,
-    next: "{次|つぎ}へ",
+  },
+  modes: {
+    creative: {
+      title: "クリエイティブモード",
+      description: "どれだけ{入手|にゅうしゅ}が{大変|たいへん}でも、すべてのブロックを{使う|つかう}。",
+    },
+    survival: {
+      title: "サバイバルモード",
+      description: "{集める|あつめる}のが{大変|たいへん}すぎるブロックを{除外|じょがい}する。",
+    },
+    creativeShort: "クリエイティブ",
+    survivalShort: "サバイバル",
+  },
+  version: {
+    heading: "マインクラフトのバージョン",
+    description: "そのバージョンに{存在|そんざい}するブロックだけが{表示|ひょうじ}されます",
+    ariaLabel: "マインクラフトのバージョンで{絞り込む|しぼりこむ}",
+    latest: "{最新|さいしん}（すべてのブロック）",
+  },
+  blocksPage: {
+    pageTitle: "ブロックを{選ぶ|えらぶ}",
+    creativeSummary: (count: number, version: string | null) =>
+      version
+        ? `マインクラフト${version}{時点|じてん}の${count}{個|こ}のブロックすべてが、ピクセルアートに{使われます|つかわれます}。`
+        : `${count}{個|こ}のブロックすべてが、ピクセルアートに{使われます|つかわれます}。`,
+    searchPlaceholder: "ブロックを{検索|けんさく}",
+    difficultyAriaLabel: "{難易度|なんいど}で{絞り込む|しぼりこむ}",
+    difficultyAll: "すべて",
+    difficultyLabel: {
+      Easy: "{簡単|かんたん}",
+      Medium: "{普通|ふつう}",
+      Hard: "{難しい|むずかしい}",
+    },
+    blocksIncluded: (count: number, total: number) =>
+      `${total}{個|こ}中${count}{個|こ}が{含まれて|ふくまれて}います`,
+    noMatches: "{検索|けんさく}{条件|じょうけん}に{一致|いっち}するブロックがありません。",
+    categoryIncluded: (count: number, total: number) =>
+      `${count}/${total}{個|こ}{選択中|せんたくちゅう}`,
+    includeAll: "すべて{含める|ふくめる}",
+    excludeAll: "すべて{除外|じょがい}する",
+  },
+  presets: {
+    heading: "プリセット",
+    description:
+      "{選んだ|えらんだ}モード・バージョン・ブロックを{保存|ほぞん}して、{次回|じかい}も{使えます|つかえます}",
+    summary: (count: number, modeLabel: string) => `${count}{個|こ} · ${modeLabel}`,
+    load: "{読み込む|よみこむ}",
+    delete: "{削除|さくじょ}",
+    nameAriaLabel: "{新しい|あたらしい}プリセット{名|めい}",
+    namePlaceholder: "プリセット{名|めい}（{例|れい}：いつものパレット）",
+    save: "{現在|げんざい}の{選択|せんたく}を{保存|ほぞん}",
   },
 };

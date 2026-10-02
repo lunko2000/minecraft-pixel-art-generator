@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { BlockPicker } from "@/components/block-picker";
+import { T } from "@/lib/i18n/T";
+import { useTranslations } from "@/lib/i18n/use-translations";
 import { scaleToHeight } from "@/lib/size";
 import { useImageDimensions } from "@/lib/use-image-dimensions";
 import { usePixelArt } from "../pixel-art-provider";
@@ -13,6 +15,7 @@ export default function BlocksPage() {
   const { image, height } = usePixelArt();
   const imageSize = useImageDimensions(image);
   const hasInput = image !== null;
+  const t = useTranslations();
 
   // The image is only kept in memory, so a page refresh sends you back to step 1.
   useEffect(() => {
@@ -30,10 +33,10 @@ export default function BlocksPage() {
           href="/"
           className="text-sm text-zinc-400 underline-offset-4 hover:text-zinc-200 hover:underline"
         >
-          ← Back
+          <T>{t.common.back}</T>
         </Link>
         <h1 className="text-3xl font-semibold tracking-tight text-zinc-100">
-          Choose your blocks
+          <T>{t.blocksPage.pageTitle}</T>
         </h1>
         <p className="text-sm text-zinc-500">
           {image.name}
