@@ -1,0 +1,2764 @@
+[
+  {
+    "id": "andesite",
+    "name": "Andesite",
+    "color": "#888889",
+    "noise": 2255,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "bone_block",
+    "name": "Bone Block",
+    "color": "#e5e2d0",
+    "noise": 202,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "bone_block_end",
+    "name": "Bone Block (End)",
+    "color": "#d2ceb3",
+    "noise": 2045,
+    "category": "overworld",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "bookshelf",
+    "name": "Bookshelf",
+    "color": "#755f3c",
+    "noise": 22948,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "bricks",
+    "name": "Bricks",
+    "color": "#976253",
+    "noise": 5455,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_red_sandstone",
+    "name": "Chiseled Red Sandstone",
+    "color": "#b7611c",
+    "noise": 2123,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_sandstone",
+    "name": "Chiseled Sandstone",
+    "color": "#d8cb9b",
+    "noise": 3516,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_stone_bricks",
+    "name": "Chiseled Stone Bricks",
+    "color": "#787778",
+    "noise": 4555,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "clay",
+    "name": "Clay",
+    "color": "#a1a6b3",
+    "noise": 507,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "coarse_dirt",
+    "name": "Coarse Dirt",
+    "color": "#77563b",
+    "noise": 5949,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cobblestone",
+    "name": "Cobblestone",
+    "color": "#807f80",
+    "noise": 7779,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cracked_stone_bricks",
+    "name": "Cracked Stone Bricks",
+    "color": "#767676",
+    "noise": 3201,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cut_red_sandstone",
+    "name": "Cut Red Sandstone",
+    "color": "#bd6620",
+    "noise": 1424,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cut_sandstone",
+    "name": "Cut Sandstone",
+    "color": "#dacea0",
+    "noise": 2419,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "diorite",
+    "name": "Diorite",
+    "color": "#bdbcbd",
+    "noise": 10817,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dirt",
+    "name": "Dirt",
+    "color": "#866043",
+    "noise": 4811,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dried_kelp_block",
+    "name": "Dried Kelp Block",
+    "color": "#26311e",
+    "noise": 5719,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dried_kelp_block_top",
+    "name": "Dried Kelp Block (Top)",
+    "color": "#323b27",
+    "noise": 10155,
+    "category": "overworld",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "granite",
+    "name": "Granite",
+    "color": "#956756",
+    "noise": 4099,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gravel",
+    "name": "Gravel",
+    "color": "#847f7f",
+    "noise": 2634,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "hay_block",
+    "name": "Hay Bale",
+    "color": "#a68926",
+    "noise": 5483,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "hay_block_end",
+    "name": "Hay Bale (End)",
+    "color": "#a68b0c",
+    "noise": 2531,
+    "category": "overworld",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "jukebox",
+    "name": "Jukebox",
+    "color": "#593b29",
+    "noise": 5651,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "jukebox_top",
+    "name": "Jukebox (Top)",
+    "color": "#5e402f",
+    "noise": 5508,
+    "category": "overworld",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "melon",
+    "name": "Melon",
+    "color": "#72921e",
+    "noise": 6813,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "melon_top",
+    "name": "Melon (Top)",
+    "color": "#6f911f",
+    "noise": 5700,
+    "category": "overworld",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "mossy_cobblestone",
+    "name": "Mossy Cobblestone",
+    "color": "#6e775f",
+    "noise": 6762,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "mossy_stone_bricks",
+    "name": "Mossy Stone Bricks",
+    "color": "#737969",
+    "noise": 4443,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "mud",
+    "name": "Mud",
+    "color": "#3c393d",
+    "noise": 411,
+    "category": "overworld",
+    "since": "later"
+  },
+  {
+    "id": "mud_bricks",
+    "name": "Mud Bricks",
+    "color": "#89684f",
+    "noise": 2531,
+    "category": "overworld",
+    "since": "later"
+  },
+  {
+    "id": "muddy_mangrove_roots",
+    "name": "Muddy Mangrove Roots",
+    "color": "#443b30",
+    "noise": 1027,
+    "category": "overworld",
+    "since": "later"
+  },
+  {
+    "id": "muddy_mangrove_roots_end",
+    "name": "Muddy Mangrove Roots (End)",
+    "color": "#463b2d",
+    "noise": 1043,
+    "category": "overworld",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "packed_mud",
+    "name": "Packed Mud",
+    "color": "#8e6b50",
+    "noise": 902,
+    "category": "overworld",
+    "since": "later"
+  },
+  {
+    "id": "polished_andesite",
+    "name": "Polished Andesite",
+    "color": "#848786",
+    "noise": 3961,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "polished_diorite",
+    "name": "Polished Diorite",
+    "color": "#c1c1c3",
+    "noise": 10303,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "polished_granite",
+    "name": "Polished Granite",
+    "color": "#9a6b59",
+    "noise": 4222,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pumpkin",
+    "name": "Pumpkin",
+    "color": "#c47318",
+    "noise": 6986,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pumpkin_top",
+    "name": "Pumpkin (Top)",
+    "color": "#c67718",
+    "noise": 5289,
+    "category": "overworld",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_sand",
+    "name": "Red Sand",
+    "color": "#bf6721",
+    "noise": 552,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_sandstone",
+    "name": "Red Sandstone",
+    "color": "#bb631d",
+    "noise": 1871,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "rooted_dirt",
+    "name": "Rooted Dirt",
+    "color": "#90684d",
+    "noise": 6510,
+    "category": "overworld",
+    "since": "later"
+  },
+  {
+    "id": "sand",
+    "name": "Sand",
+    "color": "#dbcfa3",
+    "noise": 888,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "sandstone",
+    "name": "Sandstone",
+    "color": "#d8cb9c",
+    "noise": 3101,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "smooth_red_sandstone",
+    "name": "Smooth Red Sandstone",
+    "color": "#b5621f",
+    "noise": 315,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "smooth_sandstone",
+    "name": "Smooth Sandstone",
+    "color": "#e0d6aa",
+    "noise": 317,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "smooth_stone",
+    "name": "Smooth Stone",
+    "color": "#9f9f9f",
+    "noise": 2922,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "snow_block",
+    "name": "Snow Block",
+    "color": "#f9fefe",
+    "noise": 114,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stone",
+    "name": "Stone",
+    "color": "#7e7e7e",
+    "noise": 1051,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stone_bricks",
+    "name": "Stone Bricks",
+    "color": "#7a7a7a",
+    "noise": 3184,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "target",
+    "name": "Target",
+    "color": "#e5b0a8",
+    "noise": 45409,
+    "category": "overworld",
+    "since": "1.16.5"
+  },
+  {
+    "id": "target_top",
+    "name": "Target (Top)",
+    "color": "#e2aa9e",
+    "noise": 39994,
+    "category": "overworld",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "acacia_log",
+    "name": "Acacia Log",
+    "color": "#676157",
+    "noise": 1802,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "acacia_log_end",
+    "name": "Acacia Log (End)",
+    "color": "#975937",
+    "noise": 4335,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "acacia_planks",
+    "name": "Acacia Planks",
+    "color": "#a85a32",
+    "noise": 1670,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "bamboo_mosaic",
+    "name": "Bamboo Mosaic",
+    "color": "#beaa4e",
+    "noise": 4699,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "bamboo_planks",
+    "name": "Bamboo Planks",
+    "color": "#c1ad50",
+    "noise": 5197,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "birch_log",
+    "name": "Birch Log",
+    "color": "#d9d7d2",
+    "noise": 26402,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "birch_log_end",
+    "name": "Birch Log (End)",
+    "color": "#c1b387",
+    "noise": 11907,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "birch_planks",
+    "name": "Birch Planks",
+    "color": "#c0af79",
+    "noise": 3352,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "bamboo_block",
+    "name": "Block of Bamboo",
+    "color": "#7f903a",
+    "noise": 4120,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "bamboo_block_end",
+    "name": "Block of Bamboo (End)",
+    "color": "#8b8e3e",
+    "noise": 7869,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "stripped_bamboo_block",
+    "name": "Block of Stripped Bamboo",
+    "color": "#c1ad50",
+    "noise": 5197,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "stripped_bamboo_block_end",
+    "name": "Block of Stripped Bamboo (End)",
+    "color": "#b29f49",
+    "noise": 11131,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "cherry_log",
+    "name": "Cherry Log",
+    "color": "#37212c",
+    "noise": 859,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "cherry_log_end",
+    "name": "Cherry Log (End)",
+    "color": "#b98d89",
+    "noise": 37770,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "cherry_planks",
+    "name": "Cherry Planks",
+    "color": "#e3b3ad",
+    "noise": 2798,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "dark_oak_log",
+    "name": "Dark Oak Log",
+    "color": "#3c2f1a",
+    "noise": 691,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dark_oak_log_end",
+    "name": "Dark Oak Log (End)",
+    "color": "#442d16",
+    "noise": 460,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dark_oak_planks",
+    "name": "Dark Oak Planks",
+    "color": "#432b14",
+    "noise": 861,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "jungle_log",
+    "name": "Jungle Log",
+    "color": "#554419",
+    "noise": 1416,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "jungle_log_end",
+    "name": "Jungle Log (End)",
+    "color": "#966d47",
+    "noise": 8018,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "jungle_planks",
+    "name": "Jungle Planks",
+    "color": "#a07351",
+    "noise": 5061,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "mangrove_log",
+    "name": "Mangrove Log",
+    "color": "#544329",
+    "noise": 827,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "mangrove_log_end",
+    "name": "Mangrove Log (End)",
+    "color": "#67312a",
+    "noise": 1594,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "mangrove_planks",
+    "name": "Mangrove Planks",
+    "color": "#763631",
+    "noise": 1588,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "oak_log",
+    "name": "Oak Log",
+    "color": "#6d5533",
+    "noise": 3831,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "oak_log_end",
+    "name": "Oak Log (End)",
+    "color": "#977a49",
+    "noise": 7937,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "oak_planks",
+    "name": "Oak Planks",
+    "color": "#a2834f",
+    "noise": 5257,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pale_oak_log",
+    "name": "Pale Oak Log",
+    "color": "#584e4b",
+    "noise": 2509,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "pale_oak_log_end",
+    "name": "Pale Oak Log (End)",
+    "color": "#c7bdbc",
+    "noise": 32861,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "pale_oak_planks",
+    "name": "Pale Oak Planks",
+    "color": "#e4dad8",
+    "noise": 4983,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "poplar_log",
+    "name": "Poplar Log",
+    "color": "#4f3d2b",
+    "noise": 600,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "poplar_log_end",
+    "name": "Poplar Log (End)",
+    "color": "#887a6e",
+    "noise": 11204,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "poplar_planks",
+    "name": "Poplar Planks",
+    "color": "#96897f",
+    "noise": 2862,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "spruce_log",
+    "name": "Spruce Log",
+    "color": "#3b2611",
+    "noise": 765,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "spruce_log_end",
+    "name": "Spruce Log (End)",
+    "color": "#6d502f",
+    "noise": 2095,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "spruce_planks",
+    "name": "Spruce Planks",
+    "color": "#735531",
+    "noise": 1716,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_acacia_log",
+    "name": "Stripped Acacia Log",
+    "color": "#af5d3c",
+    "noise": 410,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_acacia_log_end",
+    "name": "Stripped Acacia Log (End)",
+    "color": "#a65b34",
+    "noise": 811,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_birch_log",
+    "name": "Stripped Birch Log",
+    "color": "#c5b076",
+    "noise": 1009,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_birch_log_end",
+    "name": "Stripped Birch Log (End)",
+    "color": "#bfac74",
+    "noise": 2539,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_cherry_log",
+    "name": "Stripped Cherry Log",
+    "color": "#d79195",
+    "noise": 498,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "stripped_cherry_log_end",
+    "name": "Stripped Cherry Log (End)",
+    "color": "#dda59e",
+    "noise": 3835,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "stripped_dark_oak_log",
+    "name": "Stripped Dark Oak Log",
+    "color": "#493924",
+    "noise": 198,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_dark_oak_log_end",
+    "name": "Stripped Dark Oak Log (End)",
+    "color": "#422c17",
+    "noise": 411,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_jungle_log",
+    "name": "Stripped Jungle Log",
+    "color": "#ab8555",
+    "noise": 933,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_jungle_log_end",
+    "name": "Stripped Jungle Log (End)",
+    "color": "#a67b52",
+    "noise": 1174,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_mangrove_log",
+    "name": "Stripped Mangrove Log",
+    "color": "#783630",
+    "noise": 184,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "stripped_mangrove_log_end",
+    "name": "Stripped Mangrove Log (End)",
+    "color": "#6d2c2b",
+    "noise": 740,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "stripped_oak_log",
+    "name": "Stripped Oak Log",
+    "color": "#b19056",
+    "noise": 1326,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_oak_log_end",
+    "name": "Stripped Oak Log (End)",
+    "color": "#a0824d",
+    "noise": 3004,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_pale_oak_log",
+    "name": "Stripped Pale Oak Log",
+    "color": "#f6eeed",
+    "noise": 683,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "stripped_pale_oak_log_end",
+    "name": "Stripped Pale Oak Log (End)",
+    "color": "#ebe3e2",
+    "noise": 2699,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "stripped_poplar_log",
+    "name": "Stripped Poplar Log",
+    "color": "#a5998c",
+    "noise": 179,
+    "category": "wood",
+    "since": "later"
+  },
+  {
+    "id": "stripped_poplar_log_end",
+    "name": "Stripped Poplar Log (End)",
+    "color": "#988b81",
+    "noise": 1173,
+    "category": "wood",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "stripped_spruce_log",
+    "name": "Stripped Spruce Log",
+    "color": "#745a34",
+    "noise": 455,
+    "category": "wood",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_spruce_log_end",
+    "name": "Stripped Spruce Log (End)",
+    "color": "#715732",
+    "noise": 766,
+    "category": "wood",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "black_wool",
+    "name": "Black Wool",
+    "color": "#15151a",
+    "noise": 516,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "blue_wool",
+    "name": "Blue Wool",
+    "color": "#35399d",
+    "noise": 562,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "brown_wool",
+    "name": "Brown Wool",
+    "color": "#724829",
+    "noise": 556,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cyan_wool",
+    "name": "Cyan Wool",
+    "color": "#158a91",
+    "noise": 555,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gray_wool",
+    "name": "Gray Wool",
+    "color": "#3f4448",
+    "noise": 333,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "green_wool",
+    "name": "Green Wool",
+    "color": "#556e1c",
+    "noise": 697,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_blue_wool",
+    "name": "Light Blue Wool",
+    "color": "#3aafd9",
+    "noise": 1825,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_gray_wool",
+    "name": "Light Gray Wool",
+    "color": "#8e8e87",
+    "noise": 885,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lime_wool",
+    "name": "Lime Wool",
+    "color": "#70b91a",
+    "noise": 710,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "magenta_wool",
+    "name": "Magenta Wool",
+    "color": "#be45b4",
+    "noise": 1501,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "orange_wool",
+    "name": "Orange Wool",
+    "color": "#f17614",
+    "noise": 1214,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pink_wool",
+    "name": "Pink Wool",
+    "color": "#ee8dac",
+    "noise": 2747,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purple_wool",
+    "name": "Purple Wool",
+    "color": "#7a2aad",
+    "noise": 1152,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_wool",
+    "name": "Red Wool",
+    "color": "#a12723",
+    "noise": 475,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "white_wool",
+    "name": "White Wool",
+    "color": "#eaeced",
+    "noise": 1439,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "yellow_wool",
+    "name": "Yellow Wool",
+    "color": "#f9c628",
+    "noise": 918,
+    "category": "wool",
+    "since": "1.16.5"
+  },
+  {
+    "id": "black_concrete",
+    "name": "Black Concrete",
+    "color": "#080a0f",
+    "noise": 10,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "blue_concrete",
+    "name": "Blue Concrete",
+    "color": "#2d2f8f",
+    "noise": 5,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "brown_concrete",
+    "name": "Brown Concrete",
+    "color": "#603c20",
+    "noise": 5,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cyan_concrete",
+    "name": "Cyan Concrete",
+    "color": "#157788",
+    "noise": 5,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gray_concrete",
+    "name": "Gray Concrete",
+    "color": "#373a3e",
+    "noise": 4,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "green_concrete",
+    "name": "Green Concrete",
+    "color": "#495b24",
+    "noise": 5,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_blue_concrete",
+    "name": "Light Blue Concrete",
+    "color": "#2489c7",
+    "noise": 8,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_gray_concrete",
+    "name": "Light Gray Concrete",
+    "color": "#7d7d73",
+    "noise": 5,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lime_concrete",
+    "name": "Lime Concrete",
+    "color": "#5ea919",
+    "noise": 9,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "magenta_concrete",
+    "name": "Magenta Concrete",
+    "color": "#a9309f",
+    "noise": 9,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "orange_concrete",
+    "name": "Orange Concrete",
+    "color": "#e06101",
+    "noise": 9,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pink_concrete",
+    "name": "Pink Concrete",
+    "color": "#d6658f",
+    "noise": 8,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purple_concrete",
+    "name": "Purple Concrete",
+    "color": "#64209c",
+    "noise": 6,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_concrete",
+    "name": "Red Concrete",
+    "color": "#8e2121",
+    "noise": 7,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "white_concrete",
+    "name": "White Concrete",
+    "color": "#cfd5d6",
+    "noise": 6,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "yellow_concrete",
+    "name": "Yellow Concrete",
+    "color": "#f1af15",
+    "noise": 10,
+    "category": "concrete",
+    "since": "1.16.5"
+  },
+  {
+    "id": "black_concrete_powder",
+    "name": "Black Concrete Powder",
+    "color": "#191b20",
+    "noise": 544,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "blue_concrete_powder",
+    "name": "Blue Concrete Powder",
+    "color": "#4649a7",
+    "noise": 422,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "brown_concrete_powder",
+    "name": "Brown Concrete Powder",
+    "color": "#7e5536",
+    "noise": 503,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cyan_concrete_powder",
+    "name": "Cyan Concrete Powder",
+    "color": "#25949d",
+    "noise": 736,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gray_concrete_powder",
+    "name": "Gray Concrete Powder",
+    "color": "#4d5155",
+    "noise": 298,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "green_concrete_powder",
+    "name": "Green Concrete Powder",
+    "color": "#61772d",
+    "noise": 453,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_blue_concrete_powder",
+    "name": "Light Blue Concrete Powder",
+    "color": "#4ab5d5",
+    "noise": 1101,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_gray_concrete_powder",
+    "name": "Light Gray Concrete Powder",
+    "color": "#9b9b94",
+    "noise": 865,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lime_concrete_powder",
+    "name": "Lime Concrete Powder",
+    "color": "#7dbd2a",
+    "noise": 582,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "magenta_concrete_powder",
+    "name": "Magenta Concrete Powder",
+    "color": "#c154b9",
+    "noise": 967,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "orange_concrete_powder",
+    "name": "Orange Concrete Powder",
+    "color": "#e38420",
+    "noise": 981,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pink_concrete_powder",
+    "name": "Pink Concrete Powder",
+    "color": "#e599b5",
+    "noise": 1631,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purple_concrete_powder",
+    "name": "Purple Concrete Powder",
+    "color": "#8438b2",
+    "noise": 441,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_concrete_powder",
+    "name": "Red Concrete Powder",
+    "color": "#a83633",
+    "noise": 386,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "white_concrete_powder",
+    "name": "White Concrete Powder",
+    "color": "#e2e3e4",
+    "noise": 619,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "yellow_concrete_powder",
+    "name": "Yellow Concrete Powder",
+    "color": "#e9c737",
+    "noise": 913,
+    "category": "concrete_powder",
+    "since": "1.16.5"
+  },
+  {
+    "id": "black_terracotta",
+    "name": "Black Terracotta",
+    "color": "#251710",
+    "noise": 9,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "blue_terracotta",
+    "name": "Blue Terracotta",
+    "color": "#4a3c5b",
+    "noise": 18,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "brown_terracotta",
+    "name": "Brown Terracotta",
+    "color": "#4d3324",
+    "noise": 18,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cyan_terracotta",
+    "name": "Cyan Terracotta",
+    "color": "#575b5b",
+    "noise": 34,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gray_terracotta",
+    "name": "Gray Terracotta",
+    "color": "#3a2a24",
+    "noise": 11,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "green_terracotta",
+    "name": "Green Terracotta",
+    "color": "#4c532a",
+    "noise": 19,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_blue_terracotta",
+    "name": "Light Blue Terracotta",
+    "color": "#716d8a",
+    "noise": 22,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_gray_terracotta",
+    "name": "Light Gray Terracotta",
+    "color": "#876b62",
+    "noise": 25,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lime_terracotta",
+    "name": "Lime Terracotta",
+    "color": "#687635",
+    "noise": 44,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "magenta_terracotta",
+    "name": "Magenta Terracotta",
+    "color": "#96586d",
+    "noise": 46,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "orange_terracotta",
+    "name": "Orange Terracotta",
+    "color": "#a25426",
+    "noise": 45,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pink_terracotta",
+    "name": "Pink Terracotta",
+    "color": "#a24e4f",
+    "noise": 49,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purple_terracotta",
+    "name": "Purple Terracotta",
+    "color": "#764656",
+    "noise": 48,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_terracotta",
+    "name": "Red Terracotta",
+    "color": "#8f3d2f",
+    "noise": 43,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "terracotta",
+    "name": "Terracotta",
+    "color": "#985e44",
+    "noise": 30,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "white_terracotta",
+    "name": "White Terracotta",
+    "color": "#d2b2a1",
+    "noise": 40,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "yellow_terracotta",
+    "name": "Yellow Terracotta",
+    "color": "#ba8523",
+    "noise": 45,
+    "category": "terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "black_glazed_terracotta",
+    "name": "Black Glazed Terracotta",
+    "color": "#441e20",
+    "noise": 8391,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "blue_glazed_terracotta",
+    "name": "Blue Glazed Terracotta",
+    "color": "#2f418b",
+    "noise": 15087,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "brown_glazed_terracotta",
+    "name": "Brown Glazed Terracotta",
+    "color": "#786a56",
+    "noise": 16425,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cyan_glazed_terracotta",
+    "name": "Cyan Glazed Terracotta",
+    "color": "#34777d",
+    "noise": 22139,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gray_glazed_terracotta",
+    "name": "Gray Glazed Terracotta",
+    "color": "#535a5e",
+    "noise": 9891,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "green_glazed_terracotta",
+    "name": "Green Glazed Terracotta",
+    "color": "#758e43",
+    "noise": 21604,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_blue_glazed_terracotta",
+    "name": "Light Blue Glazed Terracotta",
+    "color": "#5fa5d1",
+    "noise": 35695,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "light_gray_glazed_terracotta",
+    "name": "Light Gray Glazed Terracotta",
+    "color": "#90a6a8",
+    "noise": 19452,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lime_glazed_terracotta",
+    "name": "Lime Glazed Terracotta",
+    "color": "#a3c637",
+    "noise": 18997,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "magenta_glazed_terracotta",
+    "name": "Magenta Glazed Terracotta",
+    "color": "#d064c0",
+    "noise": 10004,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "orange_glazed_terracotta",
+    "name": "Orange Glazed Terracotta",
+    "color": "#9b935c",
+    "noise": 50717,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pink_glazed_terracotta",
+    "name": "Pink Glazed Terracotta",
+    "color": "#eb9bb6",
+    "noise": 5213,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purple_glazed_terracotta",
+    "name": "Purple Glazed Terracotta",
+    "color": "#6e3098",
+    "noise": 13578,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_glazed_terracotta",
+    "name": "Red Glazed Terracotta",
+    "color": "#b63c35",
+    "noise": 5810,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "white_glazed_terracotta",
+    "name": "White Glazed Terracotta",
+    "color": "#bdd4cb",
+    "noise": 39021,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "yellow_glazed_terracotta",
+    "name": "Yellow Glazed Terracotta",
+    "color": "#eac059",
+    "noise": 18792,
+    "category": "glazed_terracotta",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dead_brain_coral_block",
+    "name": "Dead Brain Coral Block",
+    "color": "#7c7672",
+    "noise": 4098,
+    "category": "coral",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dead_bubble_coral_block",
+    "name": "Dead Bubble Coral Block",
+    "color": "#847c77",
+    "noise": 3185,
+    "category": "coral",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dead_fire_coral_block",
+    "name": "Dead Fire Coral Block",
+    "color": "#847c78",
+    "noise": 3180,
+    "category": "coral",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dead_horn_coral_block",
+    "name": "Dead Horn Coral Block",
+    "color": "#867e7a",
+    "noise": 4852,
+    "category": "coral",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dead_tube_coral_block",
+    "name": "Dead Tube Coral Block",
+    "color": "#827b78",
+    "noise": 3881,
+    "category": "coral",
+    "since": "1.16.5"
+  },
+  {
+    "id": "amethyst_block",
+    "name": "Block of Amethyst",
+    "color": "#8662bf",
+    "noise": 9393,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "coal_block",
+    "name": "Block of Coal",
+    "color": "#101010",
+    "noise": 656,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "copper_block",
+    "name": "Block of Copper",
+    "color": "#c06c50",
+    "noise": 3207,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "iron_block",
+    "name": "Block of Iron",
+    "color": "#dcdcdc",
+    "noise": 2901,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "raw_copper_block",
+    "name": "Block of Raw Copper",
+    "color": "#9a6a4f",
+    "noise": 9262,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "raw_gold_block",
+    "name": "Block of Raw Gold",
+    "color": "#dea92f",
+    "noise": 13054,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "raw_iron_block",
+    "name": "Block of Raw Iron",
+    "color": "#a6886b",
+    "noise": 13457,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "redstone_block",
+    "name": "Block of Redstone",
+    "color": "#b01905",
+    "noise": 4887,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "calcite",
+    "name": "Calcite",
+    "color": "#dfe0dd",
+    "noise": 3349,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_copper",
+    "name": "Chiseled Copper",
+    "color": "#b8654a",
+    "noise": 4141,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_deepslate",
+    "name": "Chiseled Deepslate",
+    "color": "#363637",
+    "noise": 2335,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_tuff",
+    "name": "Chiseled Tuff",
+    "color": "#595e57",
+    "noise": 3611,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_tuff_top",
+    "name": "Chiseled Tuff (Top)",
+    "color": "#5e635b",
+    "noise": 3654,
+    "category": "underground",
+    "face": "top",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_tuff_bricks",
+    "name": "Chiseled Tuff Bricks",
+    "color": "#636760",
+    "noise": 3691,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_tuff_bricks_top",
+    "name": "Chiseled Tuff Bricks (Top)",
+    "color": "#6f726b",
+    "noise": 2528,
+    "category": "underground",
+    "face": "top",
+    "since": "later"
+  },
+  {
+    "id": "coal_ore",
+    "name": "Coal Ore",
+    "color": "#6a6a69",
+    "noise": 8168,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cobbled_deepslate",
+    "name": "Cobbled Deepslate",
+    "color": "#4d4d51",
+    "noise": 3784,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "copper_ore",
+    "name": "Copper Ore",
+    "color": "#7d7e78",
+    "noise": 5077,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "cracked_deepslate_bricks",
+    "name": "Cracked Deepslate Bricks",
+    "color": "#414141",
+    "noise": 4616,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "cracked_deepslate_tiles",
+    "name": "Cracked Deepslate Tiles",
+    "color": "#353535",
+    "noise": 1975,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "cut_copper",
+    "name": "Cut Copper",
+    "color": "#bf6b51",
+    "noise": 3913,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate",
+    "name": "Deepslate",
+    "color": "#505053",
+    "noise": 3834,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_end",
+    "name": "Deepslate (End)",
+    "color": "#575759",
+    "noise": 2628,
+    "category": "underground",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_bricks",
+    "name": "Deepslate Bricks",
+    "color": "#474747",
+    "noise": 4378,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_coal_ore",
+    "name": "Deepslate Coal Ore",
+    "color": "#4a4a4c",
+    "noise": 7957,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_copper_ore",
+    "name": "Deepslate Copper Ore",
+    "color": "#5c5d59",
+    "noise": 8355,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_diamond_ore",
+    "name": "Deepslate Diamond Ore",
+    "color": "#536a6b",
+    "noise": 17940,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_emerald_ore",
+    "name": "Deepslate Emerald Ore",
+    "color": "#4e6858",
+    "noise": 17777,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_gold_ore",
+    "name": "Deepslate Gold Ore",
+    "color": "#73674e",
+    "noise": 19766,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_iron_ore",
+    "name": "Deepslate Iron Ore",
+    "color": "#6b645f",
+    "noise": 11014,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_lapis_ore",
+    "name": "Deepslate Lapis Lazuli Ore",
+    "color": "#505b73",
+    "noise": 11130,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_redstone_ore",
+    "name": "Deepslate Redstone Ore",
+    "color": "#69494b",
+    "noise": 13589,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "deepslate_tiles",
+    "name": "Deepslate Tiles",
+    "color": "#373737",
+    "noise": 2014,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "diamond_ore",
+    "name": "Diamond Ore",
+    "color": "#798d8d",
+    "noise": 10055,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dripstone_block",
+    "name": "Dripstone Block",
+    "color": "#866c5d",
+    "noise": 3127,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "emerald_ore",
+    "name": "Emerald Ore",
+    "color": "#6c8874",
+    "noise": 13306,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "exposed_chiseled_copper",
+    "name": "Exposed Chiseled Copper",
+    "color": "#9b7765",
+    "noise": 3552,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "exposed_copper",
+    "name": "Exposed Copper",
+    "color": "#a17e68",
+    "noise": 2701,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "exposed_cut_copper",
+    "name": "Exposed Cut Copper",
+    "color": "#9b7a65",
+    "noise": 3479,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "gold_ore",
+    "name": "Gold Ore",
+    "color": "#91866b",
+    "noise": 13720,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "iron_ore",
+    "name": "Iron Ore",
+    "color": "#88817b",
+    "noise": 4080,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lapis_ore",
+    "name": "Lapis Lazuli Ore",
+    "color": "#6b768d",
+    "noise": 10315,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "moss_block",
+    "name": "Moss Block",
+    "color": "#596e2d",
+    "noise": 1744,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "oxidized_chiseled_copper",
+    "name": "Oxidized Chiseled Copper",
+    "color": "#54a284",
+    "noise": 5067,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "oxidized_copper",
+    "name": "Oxidized Copper",
+    "color": "#52a385",
+    "noise": 3959,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "oxidized_cut_copper",
+    "name": "Oxidized Cut Copper",
+    "color": "#509a7e",
+    "noise": 5217,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "pale_moss_block",
+    "name": "Pale Moss Block",
+    "color": "#6b7069",
+    "noise": 2698,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "polished_deepslate",
+    "name": "Polished Deepslate",
+    "color": "#484949",
+    "noise": 3672,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "polished_tuff",
+    "name": "Polished Tuff",
+    "color": "#626864",
+    "noise": 1537,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "redstone_ore",
+    "name": "Redstone Ore",
+    "color": "#8c6e6e",
+    "noise": 13674,
+    "category": "underground",
+    "since": "1.16.5"
+  },
+  {
+    "id": "tuff",
+    "name": "Tuff",
+    "color": "#6c6d67",
+    "noise": 3880,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "tuff_bricks",
+    "name": "Tuff Bricks",
+    "color": "#62675f",
+    "noise": 4359,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "weathered_chiseled_copper",
+    "name": "Weathered Chiseled Copper",
+    "color": "#69976f",
+    "noise": 5233,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "weathered_copper",
+    "name": "Weathered Copper",
+    "color": "#6c996e",
+    "noise": 3379,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "weathered_cut_copper",
+    "name": "Weathered Cut Copper",
+    "color": "#6d916c",
+    "noise": 4255,
+    "category": "underground",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_cinnabar",
+    "name": "Chiseled Cinnabar",
+    "color": "#933737",
+    "noise": 4111,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "chiseled_sulfur",
+    "name": "Chiseled Sulfur",
+    "color": "#bbaa5b",
+    "noise": 5839,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "cinnabar",
+    "name": "Cinnabar",
+    "color": "#98534e",
+    "noise": 2108,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "cinnabar_bricks",
+    "name": "Cinnabar Bricks",
+    "color": "#943836",
+    "noise": 2923,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "polished_cinnabar",
+    "name": "Polished Cinnabar",
+    "color": "#993a37",
+    "noise": 2659,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "polished_sulfur",
+    "name": "Polished Sulfur",
+    "color": "#bcaa5b",
+    "noise": 4122,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "potent_sulfur",
+    "name": "Potent Sulfur",
+    "color": "#d3d161",
+    "noise": 858,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "sulfur",
+    "name": "Sulfur",
+    "color": "#beaf66",
+    "noise": 1575,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "sulfur_bricks",
+    "name": "Sulfur Bricks",
+    "color": "#bba85b",
+    "noise": 5280,
+    "category": "sulfur",
+    "since": "later"
+  },
+  {
+    "id": "basalt",
+    "name": "Basalt",
+    "color": "#49494e",
+    "noise": 2158,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "basalt_end",
+    "name": "Basalt (End)",
+    "color": "#515156",
+    "noise": 5831,
+    "category": "nether",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "blackstone",
+    "name": "Blackstone",
+    "color": "#2a2429",
+    "noise": 2563,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "blackstone_top",
+    "name": "Blackstone (Top)",
+    "color": "#2a242a",
+    "noise": 2377,
+    "category": "nether",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "quartz_block",
+    "name": "Block of Quartz",
+    "color": "#ece6df",
+    "noise": 362,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "quartz_block_top",
+    "name": "Block of Quartz (Top)",
+    "color": "#ece6df",
+    "noise": 362,
+    "category": "nether",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_nether_bricks",
+    "name": "Chiseled Nether Bricks",
+    "color": "#2e171b",
+    "noise": 1015,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_polished_blackstone",
+    "name": "Chiseled Polished Blackstone",
+    "color": "#363139",
+    "noise": 3705,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_quartz_block",
+    "name": "Chiseled Quartz Block",
+    "color": "#e8e3da",
+    "noise": 631,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_quartz_block_top",
+    "name": "Chiseled Quartz Block (Top)",
+    "color": "#e8e3d9",
+    "noise": 767,
+    "category": "nether",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cracked_nether_bricks",
+    "name": "Cracked Nether Bricks",
+    "color": "#281418",
+    "noise": 820,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "cracked_polished_blackstone_bricks",
+    "name": "Cracked Polished Blackstone Bricks",
+    "color": "#2c262c",
+    "noise": 3366,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "crimson_planks",
+    "name": "Crimson Planks",
+    "color": "#653147",
+    "noise": 2591,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "crimson_stem",
+    "name": "Crimson Stem",
+    "color": "#5d1a1e",
+    "noise": 3668,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "crimson_stem_end",
+    "name": "Crimson Stem (End)",
+    "color": "#713246",
+    "noise": 3658,
+    "category": "nether",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gilded_blackstone",
+    "name": "Gilded Blackstone",
+    "color": "#382b26",
+    "noise": 9524,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "glowstone",
+    "name": "Glowstone",
+    "color": "#ac8354",
+    "noise": 35540,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "magma_block",
+    "name": "Magma Block",
+    "color": "#8e3f1f",
+    "noise": 19391,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "nether_bricks",
+    "name": "Nether Bricks",
+    "color": "#2c161a",
+    "noise": 745,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "nether_gold_ore",
+    "name": "Nether Gold Ore",
+    "color": "#73372a",
+    "noise": 16257,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "nether_quartz_ore",
+    "name": "Nether Quartz Ore",
+    "color": "#76423e",
+    "noise": 22083,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "nether_wart_block",
+    "name": "Nether Wart Block",
+    "color": "#730302",
+    "noise": 1237,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "netherrack",
+    "name": "Netherrack",
+    "color": "#622626",
+    "noise": 1675,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "polished_basalt",
+    "name": "Polished Basalt",
+    "color": "#59585c",
+    "noise": 4697,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "polished_basalt_end",
+    "name": "Polished Basalt (End)",
+    "color": "#636365",
+    "noise": 4997,
+    "category": "nether",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "polished_blackstone",
+    "name": "Polished Blackstone",
+    "color": "#353139",
+    "noise": 2335,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "polished_blackstone_bricks",
+    "name": "Polished Blackstone Bricks",
+    "color": "#302b32",
+    "noise": 2937,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "quartz_bricks",
+    "name": "Quartz Bricks",
+    "color": "#ebe5de",
+    "noise": 528,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "quartz_pillar",
+    "name": "Quartz Pillar",
+    "color": "#ece7e0",
+    "noise": 549,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "quartz_pillar_end",
+    "name": "Quartz Pillar (End)",
+    "color": "#ebe6df",
+    "noise": 541,
+    "category": "nether",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "red_nether_bricks",
+    "name": "Red Nether Bricks",
+    "color": "#460709",
+    "noise": 1503,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "shroomlight",
+    "name": "Shroomlight",
+    "color": "#f19347",
+    "noise": 17311,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "smooth_basalt",
+    "name": "Smooth Basalt",
+    "color": "#49484e",
+    "noise": 2320,
+    "category": "nether",
+    "since": "later"
+  },
+  {
+    "id": "smooth_quartz",
+    "name": "Smooth Quartz Block",
+    "color": "#ede6e0",
+    "noise": 106,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "soul_sand",
+    "name": "Soul Sand",
+    "color": "#513e33",
+    "noise": 2386,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "soul_soil",
+    "name": "Soul Soil",
+    "color": "#4c3a2f",
+    "noise": 1506,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_crimson_stem",
+    "name": "Stripped Crimson Stem",
+    "color": "#89395a",
+    "noise": 525,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_crimson_stem_end",
+    "name": "Stripped Crimson Stem (End)",
+    "color": "#7a3853",
+    "noise": 1057,
+    "category": "nether",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_warped_stem",
+    "name": "Stripped Warped Stem",
+    "color": "#3a9794",
+    "noise": 847,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "stripped_warped_stem_end",
+    "name": "Stripped Warped Stem (End)",
+    "color": "#34817c",
+    "noise": 2925,
+    "category": "nether",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "warped_planks",
+    "name": "Warped Planks",
+    "color": "#2b6963",
+    "noise": 6076,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "warped_stem",
+    "name": "Warped Stem",
+    "color": "#3a3b4e",
+    "noise": 6557,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "warped_stem_end",
+    "name": "Warped Stem (End)",
+    "color": "#356e6e",
+    "noise": 8179,
+    "category": "nether",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "warped_wart_block",
+    "name": "Warped Wart Block",
+    "color": "#177879",
+    "noise": 1910,
+    "category": "nether",
+    "since": "1.16.5"
+  },
+  {
+    "id": "end_stone",
+    "name": "End Stone",
+    "color": "#dcdf9e",
+    "noise": 2616,
+    "category": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "end_stone_bricks",
+    "name": "End Stone Bricks",
+    "color": "#dae0a2",
+    "noise": 4618,
+    "category": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purpur_block",
+    "name": "Purpur Block",
+    "color": "#aa7eaa",
+    "noise": 2771,
+    "category": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purpur_pillar",
+    "name": "Purpur Pillar",
+    "color": "#ac82ac",
+    "noise": 3380,
+    "category": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "purpur_pillar_end",
+    "name": "Purpur Pillar (End)",
+    "color": "#ac80ab",
+    "noise": 2653,
+    "category": "end",
+    "face": "end",
+    "since": "1.16.5"
+  },
+  {
+    "id": "dark_prismarine",
+    "name": "Dark Prismarine",
+    "color": "#345c4c",
+    "noise": 3181,
+    "category": "ocean",
+    "since": "1.16.5"
+  },
+  {
+    "id": "prismarine",
+    "name": "Prismarine",
+    "color": "#63a292",
+    "noise": 7077,
+    "category": "ocean",
+    "since": "1.16.5"
+  },
+  {
+    "id": "prismarine_bricks",
+    "name": "Prismarine Bricks",
+    "color": "#63ac9e",
+    "noise": 4959,
+    "category": "ocean",
+    "since": "1.16.5"
+  },
+  {
+    "id": "sea_lantern",
+    "name": "Sea Lantern",
+    "color": "#acc8bf",
+    "noise": 20569,
+    "category": "ocean",
+    "since": "1.16.5"
+  },
+  {
+    "id": "sponge",
+    "name": "Sponge",
+    "color": "#c4c04b",
+    "noise": 3174,
+    "category": "ocean",
+    "since": "1.16.5"
+  },
+  {
+    "id": "wet_sponge",
+    "name": "Wet Sponge",
+    "color": "#abb546",
+    "noise": 3371,
+    "category": "ocean",
+    "since": "1.16.5"
+  },
+  {
+    "id": "resin_block",
+    "name": "Block of Resin",
+    "color": "#d96319",
+    "noise": 5411,
+    "category": "special",
+    "since": "later"
+  },
+  {
+    "id": "blue_ice",
+    "name": "Blue Ice",
+    "color": "#74a8fd",
+    "noise": 877,
+    "category": "special",
+    "since": "1.16.5"
+  },
+  {
+    "id": "chiseled_resin_bricks",
+    "name": "Chiseled Resin Bricks",
+    "color": "#c95419",
+    "noise": 6568,
+    "category": "special",
+    "since": "later"
+  },
+  {
+    "id": "honeycomb_block",
+    "name": "Honeycomb Block",
+    "color": "#e5941e",
+    "noise": 10564,
+    "category": "special",
+    "since": "1.16.5"
+  },
+  {
+    "id": "ochre_froglight",
+    "name": "Ochre Froglight",
+    "color": "#f5e9b6",
+    "noise": 7366,
+    "category": "special",
+    "since": "later"
+  },
+  {
+    "id": "ochre_froglight_end",
+    "name": "Ochre Froglight (End)",
+    "color": "#fbf5cf",
+    "noise": 3823,
+    "category": "special",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "packed_ice",
+    "name": "Packed Ice",
+    "color": "#8eb4fa",
+    "noise": 1141,
+    "category": "special",
+    "since": "1.16.5"
+  },
+  {
+    "id": "pearlescent_froglight",
+    "name": "Pearlescent Froglight",
+    "color": "#ece1e5",
+    "noise": 6283,
+    "category": "special",
+    "since": "later"
+  },
+  {
+    "id": "pearlescent_froglight_end",
+    "name": "Pearlescent Froglight (End)",
+    "color": "#f6f0f0",
+    "noise": 2888,
+    "category": "special",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "resin_bricks",
+    "name": "Resin Bricks",
+    "color": "#ce5918",
+    "noise": 6354,
+    "category": "special",
+    "since": "later"
+  },
+  {
+    "id": "sculk",
+    "name": "Sculk",
+    "color": "#0d1c22",
+    "noise": 1443,
+    "category": "special",
+    "since": "later"
+  },
+  {
+    "id": "verdant_froglight",
+    "name": "Verdant Froglight",
+    "color": "#d3ebd0",
+    "noise": 9514,
+    "category": "special",
+    "since": "later"
+  },
+  {
+    "id": "verdant_froglight_end",
+    "name": "Verdant Froglight (End)",
+    "color": "#e5f4e4",
+    "noise": 4691,
+    "category": "special",
+    "face": "end",
+    "since": "later"
+  },
+  {
+    "id": "ancient_debris",
+    "name": "Ancient Debris",
+    "color": "#604038",
+    "noise": 6683,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "ancient_debris_top",
+    "name": "Ancient Debris (Top)",
+    "color": "#5f423a",
+    "noise": 14168,
+    "category": "rare",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "diamond_block",
+    "name": "Block of Diamond",
+    "color": "#62ede4",
+    "noise": 8314,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "emerald_block",
+    "name": "Block of Emerald",
+    "color": "#2acb58",
+    "noise": 11224,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "gold_block",
+    "name": "Block of Gold",
+    "color": "#f6d03e",
+    "noise": 5483,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lapis_block",
+    "name": "Block of Lapis Lazuli",
+    "color": "#1f438c",
+    "noise": 950,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "netherite_block",
+    "name": "Block of Netherite",
+    "color": "#433d40",
+    "noise": 2195,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "crying_obsidian",
+    "name": "Crying Obsidian",
+    "color": "#210a3c",
+    "noise": 14654,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lodestone",
+    "name": "Lodestone",
+    "color": "#77787b",
+    "noise": 10420,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "lodestone_top",
+    "name": "Lodestone (Top)",
+    "color": "#939599",
+    "noise": 5472,
+    "category": "rare",
+    "face": "top",
+    "since": "1.16.5"
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "color": "#0f0b19",
+    "noise": 3042,
+    "category": "rare",
+    "since": "1.16.5"
+  },
+  {
+    "id": "bedrock",
+    "name": "Bedrock",
+    "color": "#555555",
+    "noise": 13018,
+    "category": "creative",
+    "since": "1.16.5"
+  },
+  {
+    "id": "reinforced_deepslate",
+    "name": "Reinforced Deepslate",
+    "color": "#666d65",
+    "noise": 22721,
+    "category": "creative",
+    "since": "later"
+  },
+  {
+    "id": "reinforced_deepslate_top",
+    "name": "Reinforced Deepslate (Top)",
+    "color": "#50534f",
+    "noise": 13662,
+    "category": "creative",
+    "face": "top",
+    "since": "later"
+  }
+]
