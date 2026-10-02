@@ -3,6 +3,9 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { MAX_HEIGHT, MIN_HEIGHT, usePixelArt } from "@/app/pixel-art-provider";
+import { stripFurigana } from "@/lib/i18n/furigana";
+import { T } from "@/lib/i18n/T";
+import { useTranslations } from "@/lib/i18n/use-translations";
 import { scaleToHeight } from "@/lib/size";
 import { useImageDimensions } from "@/lib/use-image-dimensions";
 
@@ -14,6 +17,7 @@ export function UploadForm() {
   const { image, setImage, height, setHeight } = usePixelArt();
   const fileInput = useRef<HTMLInputElement>(null);
   const imageSize = useImageDimensions(image);
+  const t = useTranslations();
 
   // What the number field shows. Kept as text so an in-progress, temporarily
   // out-of-range entry can round-trip. Resynced from `height` on render
@@ -70,7 +74,7 @@ export function UploadForm() {
     >
       <div className="flex flex-col gap-2">
         <label htmlFor="image" className="text-sm font-medium text-zinc-300">
-          Choose an image to generate
+          <T>{t.upload.chooseImageLabel}</T>
         </label>
         <input
           ref={fileInput}
@@ -86,13 +90,13 @@ export function UploadForm() {
       <div className="flex flex-col gap-2">
         <div className="flex items-baseline justify-between gap-3">
           <label htmlFor="height" className="text-sm font-medium text-zinc-300">
-            Pixel art size
+            <T>{t.upload.pixelArtSizeLabel}</T>
           </label>
           <div className="flex items-center gap-1.5">
             <input
               type="number"
               inputMode="numeric"
-              aria-label="Pixel art height in blocks"
+              aria-label={stripFurigana(t.upload.heightAriaLabel)}
               min={MIN_HEIGHT}
               max={MAX_HEIGHT}
               value={heightText}
@@ -103,7 +107,9 @@ export function UploadForm() {
               }}
               className="w-14 rounded-md border border-zinc-700 bg-zinc-950 px-1.5 py-1 text-right text-sm text-zinc-100 focus:border-zinc-500 focus:outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
             />
-            <span className="text-sm text-zinc-400">blocks tall</span>
+            <span className="text-sm text-zinc-400">
+              <T>{t.upload.blocksTall}</T>
+            </span>
           </div>
         </div>
         <input
@@ -117,9 +123,11 @@ export function UploadForm() {
           className="w-full cursor-pointer accent-zinc-100"
         />
         <p className="text-xs text-zinc-500">
-          {preview
-            ? `That comes out to ${preview.width}x${preview.height}, based on your image's shape.`
-            : "Choose an image above to see the full size. The width is set to match its shape."}
+          <T>
+            {preview
+              ? t.upload.previewKnown(preview.width, preview.height)
+              : t.upload.previewUnknown}
+          </T>
         </p>
       </div>
 
@@ -128,7 +136,7 @@ export function UploadForm() {
         disabled={!canContinue}
         className="w-full cursor-pointer rounded-lg bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-zinc-100"
       >
-        Next
+        <T>{t.upload.next}</T>
       </button>
     </form>
   );
