@@ -94,4 +94,51 @@ export const ja: typeof en = {
     namePlaceholder: "プリセット{名|めい}（{例|れい}：いつものパレット）",
     save: "{現在|げんざい}の{選択|せんたく}を{保存|ほぞん}",
   },
+  generate: {
+    pageTitle: "あなたのピクセルアート",
+    colorBlending: {
+      heading: "{色|いろ}の{混ぜ方|まぜかた}",
+      description: "ディザリングは、{単調|たんちょう}な{色|いろ}の{帯|おび}をより{繊細|せんさい}な{質感|しつかん}に{変える|かえる}",
+      ariaLabel: "{色|いろ}の{一致|いっち}モード",
+      flat: "フラットカラー",
+      dithered: "ディザリング",
+    },
+    previewStyle: {
+      heading: "プレビュー{表示|ひょうじ}",
+      description: "{実際|じっさい}のテクスチャには{独自|どくじ}の{質感|しつかん}があり、ソリッドは{一致|いっち}した{色|いろ}だけを{表示|ひょうじ}する",
+      ariaLabel: "プレビュー{表示|ひょうじ}",
+      textured: "テクスチャ",
+      solid: "ソリッドカラー",
+    },
+    zoom: {
+      heading: "ズーム",
+      description: "1×を{超える|こえる}と、はみ出した{部分|ぶぶん}はプレビューをスクロールして{確認|かくにん}できます",
+      ariaLabel: "ズームレベル",
+      fit: "フィット",
+      label: (zoomValue: number, px: number) => `${zoomValue.toFixed(1)}× · ${px}px`,
+      reset: "{リセット|りせっと}",
+    },
+    noBlocksAvailable:
+      "{使える|つかえる}ブロックがありません。{戻って|もどって}、{少なくとも|すくなくとも}{一つ|ひとつ}{含めて|ふくめて}ください。",
+    generating: "ピクセルアートを{生成中|せいせいちゅう}…",
+    markedProgress: (marked: number, total: number) =>
+      `${total}{個|こ}中${marked}{個|こ}を{設置済み|せっちずみ}としてマーク`,
+    clearMarks: "マークを{解除|かいじょ}",
+    clickToMark: "ゲーム{内|ない}で{設置|せっち}したら、ブロックをクリックしてください",
+    rowButtonTitle: (row: number) => `${row}{行目|ぎょうめ}のブロック`,
+    materialsHeading: (count: number) => `{素材|そざい}（${count}{個|こ}）`,
+    collectedCount: (count: number) => `${count}{個|こ}{収集済み|しゅうしゅうずみ}`,
+    clearCollected: "{収集済み|しゅうしゅうずみ}を{解除|かいじょ}",
+    markCollectedAriaLabel: (name: string) => `${name}を{収集済み|しゅうしゅうずみ}としてマーク`,
+    rowDialogTitle: (row: number, total: number) => `${total}{行中|ぎょうちゅう}${row}{行目|ぎょうめ}`,
+    close: "{閉じる|とじる}",
+    // Every block stacks to 64 in the actual game.
+    stackBreakdown: (count: number): string | null => {
+      const stacks = Math.floor(count / 64);
+      if (stacks === 0) return null;
+      const remainder = count % 64;
+      const label = `${stacks}スタック`;
+      return remainder === 0 ? label : `${label} + ${remainder}`;
+    },
+  },
 };

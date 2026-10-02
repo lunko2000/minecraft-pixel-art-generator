@@ -4,7 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { blockIcon, blocks, blocksById } from "@/data/blocks";
+import { blockIcon, blockName, blocks, blocksById } from "@/data/blocks";
+import { stripFurigana } from "@/lib/i18n/furigana";
+import { T } from "@/lib/i18n/T";
+import { useLanguage } from "@/lib/i18n/use-language";
+import { useTranslations } from "@/lib/i18n/use-translations";
 import { useCollectedBlocks } from "@/lib/use-collected-blocks";
 import { buildPalette, generatePixelArt, loadImage, type PixelArtGrid } from "@/lib/pixel-art";
 import { scaleToHeight } from "@/lib/size";
@@ -32,18 +36,6 @@ const MAX_CANVAS_PIXELS = 200_000_000;
 // at the new resolution. Redrawing means reloading every block's texture at
 // a new size, which is too heavy to do on every tick of a drag.
 const ZOOM_REDRAW_DELAY = 120;
-// Every block stacks to 64 in the actual game.
-const STACK_SIZE = 64;
-
-/** "1 Stack + 6", "3 Stacks", or null for anything under one full stack. */
-function stackBreakdown(count: number): string | null {
-  const stacks = Math.floor(count / STACK_SIZE);
-  if (stacks === 0) return null;
-  const remainder = count % STACK_SIZE;
-  const stackLabel = `${stacks} Stack${stacks === 1 ? "" : "s"}`;
-  return remainder === 0 ? stackLabel : `${stackLabel} + ${remainder}`;
-}
-
 export default function GeneratePage() {
   const router = useRouter();
   const {
@@ -66,6 +58,8 @@ export default function GeneratePage() {
   const imageSize = useImageDimensions(image);
   const hasInput = image !== null;
   const { collected, toggleCollected, clearCollected } = useCollectedBlocks();
+  const { language } = useLanguage();
+  const t = useTranslations();
 
   // The image is only kept in memory, so a page refresh sends you back to step 1.
   useEffect(() => {
@@ -430,9 +424,11 @@ export default function GeneratePage() {
           href="/blocks"
           className="text-sm text-zinc-400 underline-offset-4 hover:text-zinc-200 hover:underline"
         >
-          ← Back
+          <T>{t.common.back}</T>
         </Link>
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-100">Your pixel art</h1>
+        <h1 className="text-3xl font-semibold tracking-tight text-zinc-100">
+          <T>{t.generate.pageTitle}</T>
+        </h1>
         <p className="text-sm text-zinc-500">
           {image.name}
           {dimensions && ` · ${dimensions.width}x${dimensions.height}`}
@@ -441,19 +437,25 @@ export default function GeneratePage() {
 
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
         <div>
-          <div className="text-sm font-medium text-zinc-300">Color blending</div>
+          <div className="text-sm font-medium text-zinc-300">
+            <T>{t.generate.colorBlending.heading}</T>
+          </div>
           <p className="text-sm text-zinc-500">
-            Dithering breaks up flat color bands into a more nuanced texture
+            <T>{t.generate.colorBlending.description}</T>
           </p>
         </div>
-        <div className="flex gap-2" role="group" aria-label="Color matching mode">
+        <div
+          className="flex gap-2"
+          role="group"
+          aria-label={stripFurigana(t.generate.colorBlending.ariaLabel)}
+        >
           <button
             type="button"
             aria-pressed={!dither}
             onClick={() => setDither(false)}
             className="cursor-pointer rounded-full border border-zinc-700 px-3 py-1 text-sm text-zinc-400 transition-colors hover:border-zinc-500 aria-pressed:border-zinc-300 aria-pressed:bg-zinc-100 aria-pressed:text-zinc-900"
           >
-            Flat colors
+            <T>{t.generate.colorBlending.flat}</T>
           </button>
           <button
             type="button"
@@ -461,26 +463,32 @@ export default function GeneratePage() {
             onClick={() => setDither(true)}
             className="cursor-pointer rounded-full border border-zinc-700 px-3 py-1 text-sm text-zinc-400 transition-colors hover:border-zinc-500 aria-pressed:border-zinc-300 aria-pressed:bg-zinc-100 aria-pressed:text-zinc-900"
           >
-            Dithered
+            <T>{t.generate.colorBlending.dithered}</T>
           </button>
         </div>
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
         <div>
-          <div className="text-sm font-medium text-zinc-300">Preview style</div>
+          <div className="text-sm font-medium text-zinc-300">
+            <T>{t.generate.previewStyle.heading}</T>
+          </div>
           <p className="text-sm text-zinc-500">
-            Real textures have their own grain; solid shows just the matched color
+            <T>{t.generate.previewStyle.description}</T>
           </p>
         </div>
-        <div className="flex gap-2" role="group" aria-label="Preview style">
+        <div
+          className="flex gap-2"
+          role="group"
+          aria-label={stripFurigana(t.generate.previewStyle.ariaLabel)}
+        >
           <button
             type="button"
             aria-pressed={!solidColors}
             onClick={() => setSolidColors(false)}
             className="cursor-pointer rounded-full border border-zinc-700 px-3 py-1 text-sm text-zinc-400 transition-colors hover:border-zinc-500 aria-pressed:border-zinc-300 aria-pressed:bg-zinc-100 aria-pressed:text-zinc-900"
           >
-            Textured
+            <T>{t.generate.previewStyle.textured}</T>
           </button>
           <button
             type="button"
@@ -488,25 +496,31 @@ export default function GeneratePage() {
             onClick={() => setSolidColors(true)}
             className="cursor-pointer rounded-full border border-zinc-700 px-3 py-1 text-sm text-zinc-400 transition-colors hover:border-zinc-500 aria-pressed:border-zinc-300 aria-pressed:bg-zinc-100 aria-pressed:text-zinc-900"
           >
-            Solid colors
+            <T>{t.generate.previewStyle.solid}</T>
           </button>
         </div>
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
         <div>
-          <div className="text-sm font-medium text-zinc-300">Zoom</div>
+          <div className="text-sm font-medium text-zinc-300">
+            <T>{t.generate.zoom.heading}</T>
+          </div>
           <p className="text-sm text-zinc-500">
-            Past 1×, scroll the preview to reach the parts that don&apos;t fit
+            <T>{t.generate.zoom.description}</T>
           </p>
         </div>
         <div className="flex items-center gap-3">
           <span className="w-28 shrink-0 text-right text-sm text-zinc-400 tabular-nums">
-            {zoomInput === 1 ? "Fit" : `${zoomInput.toFixed(1)}× · ${Math.round(cellSize * zoomInput)}px`}
+            {zoomInput === 1 ? (
+              <T>{t.generate.zoom.fit}</T>
+            ) : (
+              t.generate.zoom.label(zoomInput, Math.round(cellSize * zoomInput))
+            )}
           </span>
           <input
             type="range"
-            aria-label="Zoom level"
+            aria-label={stripFurigana(t.generate.zoom.ariaLabel)}
             min={1}
             max={maxZoom}
             step={0.1}
@@ -520,7 +534,7 @@ export default function GeneratePage() {
               onClick={() => setZoomInput(1)}
               className="cursor-pointer text-sm text-zinc-300 underline-offset-4 hover:underline"
             >
-              Reset
+              <T>{t.generate.zoom.reset}</T>
             </button>
           )}
         </div>
@@ -528,7 +542,7 @@ export default function GeneratePage() {
 
       {availableBlocks.length === 0 ? (
         <p className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 text-sm text-zinc-400">
-          No blocks are available to build with. Go back and include at least one.
+          <T>{t.generate.noBlocksAvailable}</T>
         </p>
       ) : error ? (
         <p className="rounded-xl border border-rose-900 bg-rose-950 p-5 text-sm text-rose-300">
@@ -536,14 +550,18 @@ export default function GeneratePage() {
         </p>
       ) : !grid ? (
         <p className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 text-sm text-zinc-400">
-          Generating your pixel art…
+          <T>{t.generate.generating}</T>
         </p>
       ) : (
         <div className="flex flex-col gap-4">
           <div className="flex flex-wrap items-center gap-3 text-sm text-zinc-400">
             <span>
-              <span className="text-zinc-100">{placedCells.size}</span> of{" "}
-              {materials.reduce((sum, { count }) => sum + count, 0)} blocks marked as placed
+              <T>
+                {t.generate.markedProgress(
+                  placedCells.size,
+                  materials.reduce((sum, { count }) => sum + count, 0),
+                )}
+              </T>
             </span>
             {placedCells.size > 0 && (
               <button
@@ -555,10 +573,12 @@ export default function GeneratePage() {
                 }}
                 className="cursor-pointer text-zinc-300 underline-offset-4 hover:underline"
               >
-                Clear marks
+                <T>{t.generate.clearMarks}</T>
               </button>
             )}
-            <span className="text-zinc-600">Click a block once you&apos;ve placed it in-game</span>
+            <span className="text-zinc-600">
+              <T>{t.generate.clickToMark}</T>
+            </span>
           </div>
 
           {/* No rounded corners anywhere near the canvas: border-radius on a
@@ -611,7 +631,7 @@ export default function GeneratePage() {
                     key={row}
                     type="button"
                     onClick={() => setOpenRow(row)}
-                    title={`Blocks for row ${row + 1}`}
+                    title={stripFurigana(t.generate.rowButtonTitle(row + 1))}
                     className="min-h-0 flex-1 cursor-pointer border-b border-zinc-800 bg-zinc-900 text-[8px] leading-none text-zinc-500 transition-colors last:border-b-0 hover:bg-zinc-700 hover:text-zinc-100"
                   >
                     ?
@@ -624,10 +644,14 @@ export default function GeneratePage() {
           <div className="flex flex-col gap-3">
             <div className="flex flex-wrap items-center gap-3">
               <h2 className="text-sm font-medium text-zinc-300">
-                Materials ({materials.length} block{materials.length === 1 ? "" : "s"})
+                <T>{t.generate.materialsHeading(materials.length)}</T>
               </h2>
               <span className="text-sm text-zinc-500">
-                {materials.filter(({ block }) => collected.has(block.id)).length} collected
+                <T>
+                  {t.generate.collectedCount(
+                    materials.filter(({ block }) => collected.has(block.id)).length,
+                  )}
+                </T>
               </span>
               {materials.some(({ block }) => collected.has(block.id)) && (
                 <button
@@ -635,14 +659,15 @@ export default function GeneratePage() {
                   onClick={clearCollected}
                   className="cursor-pointer text-sm text-zinc-300 underline-offset-4 hover:underline"
                 >
-                  Clear collected
+                  <T>{t.generate.clearCollected}</T>
                 </button>
               )}
             </div>
             <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-3">
               {materials.map(({ block, count }) => {
-                const breakdown = stackBreakdown(count);
+                const breakdown = t.generate.stackBreakdown(count);
                 const isCollected = collected.has(block.id);
+                const name = blockName(block, language);
                 return (
                   <li
                     key={block.id}
@@ -652,7 +677,7 @@ export default function GeneratePage() {
                       type="checkbox"
                       checked={isCollected}
                       onChange={() => toggleCollected(block.id)}
-                      aria-label={`Mark ${block.name} as collected`}
+                      aria-label={stripFurigana(t.generate.markCollectedAriaLabel(name))}
                       className="size-4 shrink-0 cursor-pointer accent-zinc-100"
                     />
                     <Image
@@ -664,7 +689,7 @@ export default function GeneratePage() {
                       className={`size-6 shrink-0 [image-rendering:pixelated] ${isCollected ? "opacity-40" : ""}`}
                     />
                     <span className={`truncate ${isCollected ? "text-zinc-500 line-through" : ""}`}>
-                      {block.name}
+                      {name}
                     </span>
                     <span className="ml-auto shrink-0 text-zinc-500">
                       {count}
@@ -686,18 +711,18 @@ export default function GeneratePage() {
           <div
             role="dialog"
             aria-modal="true"
-            aria-label={`Blocks for row ${openRow + 1}`}
+            aria-label={stripFurigana(t.generate.rowButtonTitle(openRow + 1))}
             className="flex max-h-[80vh] w-full max-w-sm flex-col gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-5"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex items-center justify-between">
               <h2 className="text-sm font-medium text-zinc-100">
-                Row {openRow + 1} of {grid.height}
+                <T>{t.generate.rowDialogTitle(openRow + 1, grid.height)}</T>
               </h2>
               <button
                 type="button"
                 onClick={() => setOpenRow(null)}
-                aria-label="Close"
+                aria-label={stripFurigana(t.generate.close)}
                 className="cursor-pointer text-zinc-500 hover:text-zinc-200"
               >
                 ✕
@@ -705,7 +730,7 @@ export default function GeneratePage() {
             </div>
             <ul className="flex flex-col gap-1 overflow-y-auto">
               {rowMaterials.map(({ block, count }) => {
-                const breakdown = stackBreakdown(count);
+                const breakdown = t.generate.stackBreakdown(count);
                 return (
                   <li
                     key={block.id}
@@ -719,7 +744,7 @@ export default function GeneratePage() {
                       unoptimized
                       className="size-6 shrink-0 [image-rendering:pixelated]"
                     />
-                    <span className="truncate">{block.name}</span>
+                    <span className="truncate">{blockName(block, language)}</span>
                     <span className="ml-auto shrink-0 text-zinc-500">
                       {count}
                       {breakdown && ` (${breakdown})`}

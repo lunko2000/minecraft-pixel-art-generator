@@ -82,4 +82,49 @@ export const en = {
     namePlaceholder: "Preset name, e.g. My go-to palette",
     save: "Save current selection",
   },
+  generate: {
+    pageTitle: "Your pixel art",
+    colorBlending: {
+      heading: "Color blending",
+      description: "Dithering breaks up flat color bands into a more nuanced texture",
+      ariaLabel: "Color matching mode",
+      flat: "Flat colors",
+      dithered: "Dithered",
+    },
+    previewStyle: {
+      heading: "Preview style",
+      description: "Real textures have their own grain; solid shows just the matched color",
+      ariaLabel: "Preview style",
+      textured: "Textured",
+      solid: "Solid colors",
+    },
+    zoom: {
+      heading: "Zoom",
+      description: "Past 1×, scroll the preview to reach the parts that don't fit",
+      ariaLabel: "Zoom level",
+      fit: "Fit",
+      label: (zoomValue: number, px: number) => `${zoomValue.toFixed(1)}× · ${px}px`,
+      reset: "Reset",
+    },
+    noBlocksAvailable: "No blocks are available to build with. Go back and include at least one.",
+    generating: "Generating your pixel art…",
+    markedProgress: (marked: number, total: number) => `${marked} of ${total} blocks marked as placed`,
+    clearMarks: "Clear marks",
+    clickToMark: "Click a block once you've placed it in-game",
+    rowButtonTitle: (row: number) => `Blocks for row ${row}`,
+    materialsHeading: (count: number) => `Materials (${count} block${count === 1 ? "" : "s"})`,
+    collectedCount: (count: number) => `${count} collected`,
+    clearCollected: "Clear collected",
+    markCollectedAriaLabel: (name: string) => `Mark ${name} as collected`,
+    rowDialogTitle: (row: number, total: number) => `Row ${row} of ${total}`,
+    close: "Close",
+    // Every block stacks to 64 in the actual game.
+    stackBreakdown: (count: number): string | null => {
+      const stacks = Math.floor(count / 64);
+      if (stacks === 0) return null;
+      const remainder = count % 64;
+      const label = `${stacks} Stack${stacks === 1 ? "" : "s"}`;
+      return remainder === 0 ? label : `${label} + ${remainder}`;
+    },
+  },
 };
